@@ -11,6 +11,7 @@
 		8EA89E80275FA18F00C745A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA89E7F275FA18F00C745A3 /* SceneDelegate.swift */; };
 		8EA89E82275FA18F00C745A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA89E81275FA18F00C745A3 /* ViewController.swift */; };
 		8EA89E87275FA19300C745A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EA89E86275FA19300C745A3 /* Assets.xcassets */; };
+		8EA89E95275FC17E00C745A3 /* KeyboardKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8EA89E94275FC17E00C745A3 /* KeyboardKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EA89E95275FC17E00C745A3 /* KeyboardKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +95,9 @@
 			dependencies = (
 			);
 			name = KeyboardApp;
+			packageProductDependencies = (
+				8EA89E94275FC17E00C745A3 /* KeyboardKit */,
+			);
 			productName = KeyboardApp;
 			productReference = 8EA89E7A275FA18F00C745A3 /* KeyboardApp.app */;
 			productType = "com.apple.product-type.application";
@@ -121,6 +126,9 @@
 				Base,
 			);
 			mainGroup = 8EA89E71275FA18F00C745A3;
+			packageReferences = (
+				8EA89E93275FC17E00C745A3 /* XCRemoteSwiftPackageReference "KeyboardKit" */,
+			);
 			productRefGroup = 8EA89E7B275FA18F00C745A3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -349,6 +357,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8EA89E93275FC17E00C745A3 /* XCRemoteSwiftPackageReference "KeyboardKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/KeyboardKit/KeyboardKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8EA89E94275FC17E00C745A3 /* KeyboardKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8EA89E93275FC17E00C745A3 /* XCRemoteSwiftPackageReference "KeyboardKit" */;
+			productName = KeyboardKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8EA89E72275FA18F00C745A3 /* Project object */;
 }
