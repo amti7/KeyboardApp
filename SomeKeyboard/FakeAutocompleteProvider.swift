@@ -45,9 +45,9 @@ private extension FakeAutocompleteProvider {
     
     func suggestions(for text: String) -> [AutocompleteSuggestion] {
         [
-            suggestion(text + "ly"),
-            suggestion(text + "er", "Subtitle"),
-            suggestion(text + "ter")
+            suggestion(text + "torskie"),
+            suggestion(text + "żyście", "Subtitle"),
+            suggestion(text + "orowe")
         ]
     }
     
