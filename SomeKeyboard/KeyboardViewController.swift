@@ -97,6 +97,8 @@ class KeyboardViewController: KeyboardInputViewController {
         
         // Perform the base initialization
         super.viewDidLoad()
+        
+        view.backgroundColor = .orange
     }
     
     override func viewWillSetupKeyboard() {

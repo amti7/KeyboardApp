@@ -43,6 +43,7 @@ class DemoAppearance: StandardKeyboardAppearance {
         for action: KeyboardAction,
         isPressed: Bool) -> SystemKeyboardButtonStyle {
         var style = super.systemKeyboardButtonStyle(for: action, isPressed: isPressed)
+            style.backgroundColor = .black
             style.foregroundColor = .blue
         return style
     }
