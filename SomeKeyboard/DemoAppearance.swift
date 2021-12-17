@@ -27,14 +27,15 @@ class DemoAppearance: StandardKeyboardAppearance {
     }
 
     override func inputCalloutStyle() -> InputCalloutStyle {
-        let style = super.inputCalloutStyle()
-        // style.callout.backgroundColor = .red
+        var style = super.inputCalloutStyle()
+        style.callout.backgroundColor = .red
+        style.calloutSize.width = 100
+        style.callout.borderColor = .blue
         return style
     }
     
     override func secondaryInputCalloutStyle() -> SecondaryInputCalloutStyle {
         let style = super.secondaryInputCalloutStyle()
-        // style.callout.backgroundColor = .red
         return style
     }
     
